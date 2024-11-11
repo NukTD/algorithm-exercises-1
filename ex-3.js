@@ -1,5 +1,8 @@
 function singleNumber(nums) {
-  // Start coding here
+  const resultNums = nums.filter(
+    (num) => nums.indexOf(num) === nums.lastIndexOf(num)
+  );
+  return Number(resultNums[0]);
 }
 
 let result1 = singleNumber([2, 2, 1]);
